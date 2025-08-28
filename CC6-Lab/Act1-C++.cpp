@@ -1,25 +1,25 @@
 #include <iostream>
 using namespace std;
 
-class Rectangle {
+class Rectangle { //Rectangle class is created with private attributes (lngth, wdth)
 private:
     float lngth;
     float wdth;
 
 public:
-    // 
+    // Declare
     Rectangle(float l, float w) {
         lngth = l;
         wdth = w;
     }
 
-    // Method to calculate area
-    float area() {
+    // To calculate area
+    float area() { //method area() that calculates the rectangle’s area.
         return lngth * wdth;
     }
 };
 
-int main() {
+int main() { //main() function we use user input to create a Rectangle object and then print the result.
     float l, w;
     cout << "Enter length: ";
     cin >> l;
